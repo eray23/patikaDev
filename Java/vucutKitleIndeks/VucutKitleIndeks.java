@@ -12,8 +12,8 @@ public class VucutKitleIndeks {
 		System.out.println("Kilonuzu giriniz : ");
 		double kilo = s.nextInt();
 		
-		double indeks = (kilo/boy*boy);
-		System.out.println("Vücut kitle indeksiniz : "+indeks);
+		double indeks = (kilo/(boy*boy));
+		System.out.println("Vï¿½cut kitle indeksiniz : "+indeks);
 	}
 
 }
