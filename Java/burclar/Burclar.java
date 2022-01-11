@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Burclar {
 
 	public static void main(String[] args) {
-		System.out.println("-------------Zýrva-------------");
+		
 		
 		Scanner s = new Scanner(System.in);
-		System.out.println("kaçýncý ayda doðduðunu gir : ");
+		System.out.println("kaï¿½ï¿½ncï¿½ ayda doï¿½duï¿½unu gir : ");
 		int ay = s.nextInt();
-		System.out.println("ayýn kaçýncý günü doðduðunu gir : ");
+		System.out.println("ayï¿½n kaï¿½ï¿½ncï¿½ gï¿½nï¿½ doï¿½duï¿½unu gir : ");
 		int gun = s.nextInt();
 		
 		if (ay == 1) {
             if (gun < 21) {
-                System.out.println("oðlak");
+                System.out.println("oï¿½lak");
             } else {
                 System.out.println("kova");
             }
@@ -23,23 +23,23 @@ public class Burclar {
             if (gun < 19) {
                 System.out.println("kova");
             } else {
-                System.out.println("balýk");
+                System.out.println("balï¿½k");
             }
         } else if (ay == 3) {
             if (gun < 20) {
-                System.out.println("balýk");
+                System.out.println("balï¿½k");
             } else {
-                System.out.println("koç");
+                System.out.println("koï¿½");
             }
         }else if (ay == 4) {
             if (gun < 20) {
-                System.out.println("koç");
+                System.out.println("koï¿½");
             } else {
-                System.out.println("boða");
+                System.out.println("boï¿½a");
             }
         }else if (ay == 5) {
             if (gun < 21) {
-                System.out.println("boða");
+                System.out.println("boï¿½a");
             } else {
                 System.out.println("ikizler");
             }
@@ -47,11 +47,11 @@ public class Burclar {
             if (gun < 21) {
                 System.out.println("ikizler");
             } else {
-                System.out.println("yengeç");
+                System.out.println("yengeï¿½");
             }
         }else if (ay == 7) {
             if (gun < 22) {
-                System.out.println("yengeç");
+                System.out.println("yengeï¿½");
             } else {
                 System.out.println("aslan");
             }
@@ -59,11 +59,11 @@ public class Burclar {
             if (gun < 22) {
                 System.out.println("aslan");
             } else {
-                System.out.println("baþak");
+                System.out.println("baï¿½ak");
             }
         }else if (ay == 9) {
             if (gun < 22) {
-                System.out.println("baþak");
+                System.out.println("baï¿½ak");
             } else {
                 System.out.println("terazi");
             }
@@ -83,7 +83,7 @@ public class Burclar {
             if (gun < 21) {
                 System.out.println("yay");
             } else {
-                System.out.println("oðlak");
+                System.out.println("oï¿½lak");
             }
             }
 	}
