@@ -8,20 +8,20 @@ public class UcakBileti {
 		
 		Scanner s = new Scanner(System.in);
 		double tutar;
-		System.out.print("Mesafeyi yazýnýz : ");
+		System.out.print("Mesafeyi yazï¿½nï¿½z : ");
 		double km = s.nextDouble();
-		System.out.print("Tek yön ise 1 çift yön ise 2 ye basýnýz : ");
+		System.out.print("Tek yï¿½n ise 1 ï¿½ift yï¿½n ise 2 ye basï¿½nï¿½z : ");
 		int tip = s.nextInt();
 		if(tip<1 || tip>2) {
-			System.out.println("Hatalý veri girdiniz! Programý yeniden baþlatýn..");
+			System.out.println("Hatalï¿½ veri girdiniz! Programï¿½ yeniden baï¿½latï¿½n..");
 			System.exit(1);
 		}
 		
 		
-		System.out.print("Yaþýnýzý Giriniz : ");
+		System.out.print("Yaï¿½ï¿½nï¿½zï¿½ Giriniz : ");
 		int yas = s.nextInt();
 		if(km<0 || yas<0) {
-			System.out.println("Hatalý veri girdiniz! Programý yeniden baþlatýn..");
+			System.out.println("Hatalï¿½ veri girdiniz! Programï¿½ yeniden baï¿½latï¿½n.");
 			System.exit(1);
 		}
 		if(yas<=12) {
