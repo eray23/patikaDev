@@ -4,19 +4,19 @@ const server = http.createServer((req,res)=>{
     const url = req.url;
     if(url === "/"){
         res.writeHead(200, {"Content-Type":"text/html"});
-        res.write("<h1>Index Sayfasi</h1>");
+        res.write("<h2>Index Sayfasi</h2>");
     }
     else if(url === "/hakkimda"){
         res.writeHead(200, {"Content-Type":"text/html"});
-        res.write("<h1>Hakkimda Sayfasi</h1>");
+        res.write("<h2>Hakkimda Sayfasi</h2>");
     }
     else if(url === "/iletisim"){
         res.writeHead(200, {"Content-Type":"text/html"});
-        res.write("<h1>Iletisim Sayfasi</h1>");
+        res.write("<h2>Iletisim Sayfasi</h2>");
     }
     else{
         res.writeHead(404,{"Content-Type":"text/html"});
-        res.write("<h1>404 Sayfa Bulunamadi</h1>");
+        res.write("<h2>404 Sayfa Bulunamadi</h2>");
     }
 
     res.end();
