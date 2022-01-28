@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+    padding-top: 100px;
+    
+}
+#searchBox{
+    background-color: rgb(197, 197, 197);
+    padding-bottom: 10px;
+}
+#buttons{
+    padding-top: 5px;
+}   
+.boxB { 
+    height: 100px;
+    float: left;
+    margin-left: 1px;
+    padding: 12px ;
+}
+#box1 {
+    background-color:#7EE5DA;
+    margin-left: 80px;
+    width: 30%
+}
+#box2 {
+    background-color: #70CCC2;
+    width: 20%;
+}
+#box3 {
+    background-color: #62B3AA;
+    width: 30%;
+}
