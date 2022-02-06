@@ -24,33 +24,32 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <form novalidate>
-              <form action="post" action="/photos">
-                <div class="control-group">
-                  <div class="form-group floating-label-form-group controls">
-                    <label>Post Title</label>
-                    <input type="text" class="form-control" placeholder="Name" id="name" name="Title" required
-                      data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
-                  </div>
+            <form novalidate method="post" action="/post">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Post Title</label>
+                  <input type="text" class="form-control" placeholder="Name" id="name" name="title" required
+                    data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
                 </div>
-                <div class="control-group">
-                  <div class="form-group floating-label-form-group controls">
-                    <label>Post Detail</label>
-                    <textarea rows="5" class="form-control" placeholder="Message" id="message" required
-                      data-validation-required-message="Please enter a message." name="Description"></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Post Detail</label>
+                  <textarea rows="5" class="form-control" placeholder="Message" id="message" required
+                    data-validation-required-message="Please enter a message." name="description"></textarea>
+                  <p class="help-block text-danger"></p>
                 </div>
-                <br>
-                <div id="success"></div>
+              </div>
+              <br>
+              <div id="success"></div>
 
-                <div class="form-group">
-                  <input type="file" name="image" class="form-control-file rounded-0">
-                </div>
+              <div class="form-group">
+                <input type="file" name="image" class="form-control-file rounded-0">
+              </div>
 
-                <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-              </form>
+              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+
             </form>
           </div>
         </div>
