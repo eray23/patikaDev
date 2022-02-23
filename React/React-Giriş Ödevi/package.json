@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "axios": "^0.26.0"
+  },
+  "name": "react-giris-odevi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    
+  },
+  "author": "eray23",
+  "license": "ISC",
+  "description": ""
+}
