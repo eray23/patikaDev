@@ -3,34 +3,60 @@ package hesapMakinesi;
 import java.util.Scanner;
 
 public class HesapMakinesi {
-
-	public static void main(String[] args) {
+	
+	
+	static void alan() {
 		Scanner s = new Scanner(System.in);
+		System.out.println("KÄ±sa kenar uzunluÄŸunu gir");
+		int a = s.nextInt();
+		System.out.println("Uzun kenar uzunluÄŸunu gir");
+		int b = s.nextInt();
+		System.out.println("Alan : " + (a*b));
+	}
+	static void cevre() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("KÄ±sa kenar uzunluÄŸunu gir");
+		int a = s.nextInt();
+		System.out.println("Uzun kenar uzunluÄŸunu gir");
+		int b = s.nextInt();
+		System.out.println("Ã‡evre : " + (2*a+2*b));
+	}
+	static void mod() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("SayÄ±yÄ± Giriniz : ");
+		int sayi = s.nextInt();
+		System.out.println("Mod deÄŸerini giriniz : ");
+		int mod = s.nextInt();
 		
-		int x,y,select;
-		System.out.print("1. sayýyý giriniz : ");
-		x = s.nextInt();
-		System.out.println("2. sayýyý giriniz : ");
-		y = s.nextInt();
-		System.out.println("Toplama için 1, Çýkarma için 2, Çarpma için 3, Bölme için 4");
-		select = s.nextInt();
-		
-		switch(select) {
-		case 1 : 
-			System.out.println("Toplama : " + (x+y));
-			break;
-		case 2 :
-			System.out.println("Çýkarma : " + (x-y));
-			break;
-		case 3 :
-			System.out.println("Çarpma : " + (x*y));
-			break;
-		case 4:
-			System.out.println("bölme : " + (x/y));
-			break;
-		}
-		
-
+		System.out.println("Mod : "+ sayi % mod);
 	}
 
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int select;
+        String menu = "1- Alan "
+        		+ "2- Ã‡evre " + "3- Mod";
+
+        do {
+            System.out.println(menu);
+            System.out.print("LÃ¼tfen bir iÅŸlem seÃ§iniz :");
+            select = scan.nextInt();
+            switch (select) {
+                case 1:
+                	alan();
+                    break;
+                case 2:
+                    cevre();
+                    break;
+                case 3:
+                    mod();
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("YanlÄ±ÅŸ bir deÄŸer girdiniz, tekrar deneyiniz.");
+            }
+        } while (select != 0);
+    }
 }
